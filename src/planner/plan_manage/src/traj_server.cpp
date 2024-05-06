@@ -212,6 +212,10 @@ void cmdCallback(const ros::TimerEvent &e)
   cmd.position.x = pos(0);
   cmd.position.y = pos(1);
   cmd.position.z = pos(2);
+  // print cmd.position
+  cout << "cmd.position.x: " << cmd.position.x << endl;
+  cout << "cmd.position.y: " << cmd.position.y << endl;
+  cout << "cmd.position.z: " << cmd.position.z << endl;
 
   cmd.velocity.x = vel(0);
   cmd.velocity.y = vel(1);
